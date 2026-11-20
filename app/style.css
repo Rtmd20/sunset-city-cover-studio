@@ -1,0 +1,23 @@
+html, body { margin: 0; min-height: 100%; background: #17101f; color: #f5f0f8; font: 15px/1.45 system-ui, sans-serif; }
+.app { display: flex; gap: 28px; align-items: flex-start; justify-content: center; padding: 24px; box-sizing: border-box; }
+.panel { display: flex; flex-direction: column; gap: 12px; width: 320px; flex: none; }
+.panel h1 { margin: 0; font-size: 26px; letter-spacing: 0.5px; }
+.lede, .hint { margin: 0; color: #c9bcd4; }
+.hint { font-size: 13px; }
+.field { display: flex; flex-direction: column; gap: 6px; font-weight: 600; }
+.choice { display: flex; flex-direction: row; align-items: center; font-weight: 400; }
+input[type="text"] { font: inherit; padding: 8px; border: 1px solid #5c4a6b; border-radius: 6px; background: #241a30; color: #fff; }
+button { font: inherit; font-weight: 700; padding: 10px; border: 0; border-radius: 6px; background: #3a2b4d; color: #fff; cursor: pointer; }
+button:hover { background: #4d3a66; }
+button.primary { background: #ff7a4d; color: #1a0f24; font-size: 16px; }
+button.primary:hover { background: #ffa07a; }
+.row { display: flex; gap: 8px; flex-wrap: wrap; }
+.row button { flex: 1 1 auto; }
+fieldset { border: 1px solid #5c4a6b; border-radius: 8px; padding: 10px 12px; display: flex; flex-direction: column; gap: 8px; }
+legend { font-weight: 700; padding: 0 6px; }
+#panels button.on { background: #ff7a4d; color: #1a0f24; }
+input[type="range"] { width: 100%; }
+canvas { width: min(72vh, 62vw); height: min(72vh, 62vw); flex: none; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5); background: #2b1245; }
+body.shot-cover .panel { display: none; }
+body.shot-cover .app { padding: 0; }
+body.shot-cover canvas { width: 100vw; height: 100vh; box-shadow: none; }
